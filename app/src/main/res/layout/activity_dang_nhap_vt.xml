@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/hethong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/hethongstring"
+                    android:textAlignment="center"
+                    android:textColor="@color/logincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/X"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hethong"
+                    android:text="Xin chào,"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Y"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/X"
+                    android:text="Phạm Minh Triều"
+                    android:textAlignment="center"
+                    android:textColor="@color/logincolor"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Y"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutMK"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:endIconMode="password_toggle"
+                        app:helperTextTextColor="@color/red"
+                        app:startIconDrawable="@drawable/lockopen"
+                        app:startIconTint="@color/logincolor2">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/matkhau"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/matkhau"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:textSize="15sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/input"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkGhiNho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/checkGhiNho"
+                        android:text="@string/ghinho" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/quenmk"
+                        android:textColor="@color/logincolor" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnDangNhap"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/rl"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/logincolor"
+                    android:text="@string/dangnhap"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:id="@+id/tt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnDangNhap"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp">
+
+                    <View
+                        android:layout_width="90dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:text="Hoặc đăng nhập bằng"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_width="90dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:background="@color/gray" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/padd_20"
+                    android:background="@drawable/radius_finger"
+                    android:padding="@dimen/padd_10"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/fingerprint2"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        />
+                </FrameLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/Z"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/tt"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="213dp"
+                    android:layout_marginRight="25dp"
+                    android:backgroundTint="@color/logincolor3"
+                    android:padding="10dp"
+                    android:text="Sử dụng tài khoản khác"
+                    android:textAllCaps="false"
+                    android:textColor="#4b90f2"
+                    android:textSize="17sp"
+                    app:cornerRadius="22dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

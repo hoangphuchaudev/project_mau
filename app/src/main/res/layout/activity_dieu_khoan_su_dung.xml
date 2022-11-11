@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DieuKhoanSuDung">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".views.DangNhap">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                >
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chào mừng Quý khách đến với phần mềm Quản lý lao động (NTSOFT QLLĐ) – Phiên bản ứng dụng di động, một sản phẩm được thiết lập, quản lý, vận hành và sở hữu bởi Công ty TNHH phát triển phần mềm Nhất Tâm. Chúng tôi mong bạn vui lòng dành thời gian đọc và tìm hiểu những điều khoản dưới đây trước khi sử dụng ứng dụng."
+                    />
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_below="@id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontStyle="normal"
+                    android:fontWeight="700"
+                    android:textStyle="bold"
+                    android:text="Đăng nhập và sử dụng"
+                    android:textColor="@color/logincolor"
+                    android:textSize="16dp" />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:id="@+id/text4"
+                    android:layout_below="@id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bằng việc tiến hành tải, cài đặt, truy cập vào ứng dụng, Quý khách thừa nhận đã đọc, hiểu và đồng ý với toàn bộ các điều khoản và điều kiện sử dụng được quy định dưới đây. Nếu bạn không nhất trí với những điều khoản này, xin vui lòng không sử dụng ứng dụng này."
+                    />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text5"
+                    android:layout_below="@id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trong quá trình sử dụng ứng dụng, Công ty TNHH phát triển phần mềm Nhất Tâm có quyền sửa đổi, bổ sung hoặc hủy bỏ một phần hoặc tất cả các điều khoản và điều kiện sử dụng bất cứ lúc nào. Vì vậy xin vui lòng kiểm tra định kỳ các điều khoản và điều kiện sử dụng ứng dụng của Công ty TNHH phát triển phần mềm Nhất Tâm để cập nhật những sửa đổi hoặc bổ sung kịp thời."
+                    />
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_below="@id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontStyle="normal"
+                    android:fontWeight="700"
+                    android:textStyle="bold"
+                    android:text="1. Trách nhiệm người sử dụng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text7"
+                    android:layout_below="@id/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text8"
+                    android:layout_below="@id/text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Công ty TNHH phát triển phần mềm Nhất Tâm không chịu trách nhiệm đối với bất kỳ tổn thất nào có thể phát sinh, trực tiếp hoặc gián tiếp, khi truy cập ứng dụng hoặc khi tải dữ liệu về máy, hoặc những tổn hại có thể gặp phải do virus, hoặc lỗi chương trình…"
+                    />
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_below="@id/text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontStyle="normal"
+                    android:fontWeight="700"
+                    android:textStyle="bold"
+                    android:text="2. Nội dung"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text10"
+                    android:layout_below="@id/text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Công ty TNHH phát triển phần mềm Nhất Tâm chịu trách nhiệm đảm bảo tính hợp pháp của việc cung cấp nội dung trên ứng dụng đến người sử dụng. Mọi thông tin, hình ảnh và toàn bộ nội dung được đăng tải tuân thủ các quy định của pháp luật, và phù hợp với thuần phong mỹ tục Việt Nam."
+                    />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text11"
+                    android:layout_below="@id/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tất cả thông tin trong ứng dụng này được Công ty TNHH phát triển phần mềm Nhất Tâm và đối tác có liên quan cung cấp cho người sử dụng một cách trung thực và tin cậy."
+                    />
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_below="@id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontStyle="normal"
+                    android:fontWeight="700"
+                    android:textStyle="bold"
+                    android:text="3. Bản quyền"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text13"
+                    android:layout_below="@id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Công ty TNHH phát triển phần mềm Nhất Tâm là chủ sở hữu hợp pháp và duy nhất của ứng dụng này. Bất kỳ việc chỉnh sửa ứng dụng, cập nhật và thay đổi nội dung cũng như hình thức ứng dụng là thuộc thẩm quyền của Công ty TNHH phát triển phần mềm Nhất Tâm. Những chỉnh sửa, thay đổi nội dung website của bất kỳ đối tượng nào mà không được sự cho phép của Công ty TNHH phát triển phần mềm Nhất Tâm là những hành vi vi phạm quyền lợi hợp pháp của Công ty TNHH phát triển phần mềm Nhất Tâm. Công ty TNHH phát triển phần mềm Nhất Tâm giữ toàn quyền xem xét và loại bỏ các thông tin vi phạm quy định này."
+                    />
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_below="@id/text13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontStyle="normal"
+                    android:fontWeight="700"
+                    android:textStyle="bold"
+                    android:text="4. Bảo mật thông tin người sử dụng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text15"
+                    android:layout_below="@id/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Những thông tin và ý kiến cá nhân của người sử dụng được cung cấp thông qua ứng dụng này sẽ được Công ty TNHH phát triển phần mềm Nhất Tâm bảo mật tuyệt đối và không gửi cho bất kỳ bên thứ ba nào khác, trừ những trường hợp mở rộng cần thiết để người sử dụng có thể tham gia vào những ứng dụng khác (Công ty con của Công ty TNHH phát triển phần mềm Nhất Tâm, các đại lý phân phối, đối tác) và/hoặc theo yêu cầu của cơ quan nhà nước có thẩm quyền và/hoặc theo quy định của pháp luật."
+                    />
+                <TextView
+                    android:id="@+id/text16"
+                    android:layout_below="@id/text15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontStyle="normal"
+                    android:fontWeight="700"
+                    android:textStyle="bold"
+                    android:text="5. Giới hạn sử dụng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text17"
+                    android:layout_below="@id/text16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toàn bộ nội dung, cơ sở dữ liệu của ứng dụng này được bảo vệ bởi pháp luật về quyền sở hữu trí tuệ, các văn bản pháp luật của Việt Nam và các văn bản pháp luật có liên quan khác. Trừ trường hợp sử dụng cho mục đích cá nhân hoặc sử dụng nội bộ không mang tính thương mại, người sử dụng không được phép sao chép, chỉnh sửa, tái sử dụng toàn bộ hoặc một phần, tải dữ liệu, truyền dữ liệu, phân phối, đăng ký, bán, xuất bản bất kỳ tài nguyên nào của ứng dụng này, mà không được sự đồng ý chính thức bằng văn bản của Công ty TNHH phát triển phần mềm Nhất Tâm."
+                    />
+                <TextView
+                    android:id="@+id/text18"
+                    android:layout_below="@id/text17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontStyle="normal"
+                    android:fontWeight="700"
+                    android:textStyle="bold"
+                    android:text="6. Luật áp dụng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:paddingTop="5dp"
+                    android:id="@+id/text19"
+                    android:layout_below="@id/text18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Việc quản lý, vận hành và sử dụng ứng dụng này tuân thủ các quy định của pháp luật Việt Nam."
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

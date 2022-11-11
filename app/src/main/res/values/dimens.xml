@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="size_input">56dp</dimen>
+    <dimen name="radius_menu_ca_nhan">20dp</dimen>
+    <dimen name="width_icon_menu_ca_nhan">30dp</dimen>
+    <dimen name="padd_10">10dp</dimen>
+    <dimen name="padd_15">15dp</dimen>
+    <dimen name="padd_20">20dp</dimen>
+    <dimen name="padd_56">56dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">24dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

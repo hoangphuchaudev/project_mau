@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#034c5f</color>
+    <color name="accent">#97bec6</color>
+    <color name="primarytr">#C8D8DB</color>
+
+    <color name="logincolor3">#C9ECFF</color>
+
+    <color name="red">#FF0000</color>
+    <color name="green">#10E145</color>
+    <color name="orange">#FF5722</color>
+    <color name="gray">#918E8D</color>
+    <color name="skyblue">#00BFFF</color>
+    <color name="pink">#FFF3FF</color>
+    <color name="gray2">#F1EFEF</color>
+    <color name="logincolor">#65A1F6</color>
+    <color name="logincolor2">#6FD8FB</color>
+    <color name="themeprimary">#034c5f</color>
+    <color name="themeaccent">#97bec6</color>
+
+    <color name="themeprimary1">#6c7ee1</color>
+    <color name="themeaccent1">#97bec6</color>
+
+    <color name="themeprimary2">#f28076</color>
+    <color name="themeaccent2">#ffb6af</color>
+
+    <color name="themeprimary3">#5d7b6f</color>
+    <color name="themeaccent3">#a4c3a2</color>
+
+    <color name="themeprimary4">#bd637e</color>
+    <color name="themeaccent4">#e2b4b7</color>
+
+</resources>

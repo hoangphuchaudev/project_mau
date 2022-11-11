@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Project mẫu</string>
+    <string name="empty" />
+    <string name="hethongstring">Hệ thống quản lý giá đất - NTSOFT</string>
+    <string name="dangnhapbdstring">Đăng nhập để bắt đầu phiên làm việc</string>
+    <string name="web">   Website: www.nhattamsoft.vn</string>
+    <string name="email">   Email: ntsoft@nhattamsoft.vn</string>
+    <string name="dienthoai">   Điện thoại: (0270) 3 843 058</string>
+    <string name="thongtinlh">Thông tin liên hệ</string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="quenmk">Quên mật khẩu?</string>
+    <string name="ghinho">Ghi nhớ?</string>
+    <string name="nam">Năm</string>
+    <string name="tinh">Tỉnh</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="taikhoan">Tài khoản</string>
+
+    <string name="saitaikhoanhoacmatkhau">Sai tài khoản hoặc mật khẩu!</string>
+    <string name="dangnhapthatbai">Đăng nhập thất bại!</string>
+    <string name="dangnhapthanhcong">Đăng nhập thành công!</string>
+    <string name="taikhoankhongduocdetrong">Tài khoản không được để trống!</string>
+    <string name="matkhaukhongduocdetrong">Mật khẩu không được để trống!</string>
+    <string name="tinhkhongduocdetrong">Tỉnh không được để trống!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="DangNhapVT">Đăng nhập bằng vân tay</string>
+    <string name="dsthietbi">Danh sách thiết bị</string>
+    <string name="todo">TODO</string>
+    <string name="banquyen">© Bản quyền thuộc về Công ty TNHH Phát triển\n phần mềm Nhất Tâm - NTSoft \n Phiên bản hiện tại: 1.0.6</string>
+    <string name="title_activity_tuy_chinh_giao_dien">TuyChinhGiaoDien</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

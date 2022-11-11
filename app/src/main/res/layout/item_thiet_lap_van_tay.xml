@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="itemThietBi"
+            type="vn.nhattamsoft.project_mau.model.ThietBi" />
+    </data>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginLeft="@dimen/padd_20"
+    android:layout_marginRight="@dimen/padd_20"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padd_10"
+        android:paddingLeft="5dp"
+        android:paddingRight="@dimen/padd_15"
+        android:paddingBottom="@dimen/padd_10"
+
+        >
+        <ImageView
+            android:id="@+id/smartphone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/smartphone"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/tensmartphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/smartphone"
+            android:textColor="@color/black"
+            android:text="@{itemThietBi.hangSX + ' ' +itemThietBi.tenThietBi}"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toStartOf="@+id/switch1"
+            />
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tensmartphone"
+            android:layout_toEndOf="@+id/smartphone"
+            android:layout_toStartOf="@+id/switch1"
+            android:text="@{itemThietBi.platform + ' ' +itemThietBi.version}"
+            />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</layout>

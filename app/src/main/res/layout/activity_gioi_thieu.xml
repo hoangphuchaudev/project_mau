@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.GioiThieu">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.DangNhap">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            >
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontStyle="normal"
+                android:fontWeight="700"
+                android:textStyle="bold"
+                android:text="1. THÔNG TIN CHUNG"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:text="Được thành lập vào 12/05/2008 với chặng đường hơn 10 năm hình thành và phát triển Công ty TNHH phát triển phần mềm Nhất Tâm đang từng bước phát triển không ngừng trong việc xây dựng, phát triển và triển khai phần mềm hỗ trợ khách hàng."
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_below="@id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:text="Hòa mình cùng cuộc cách mạng công nghiệp 4.0. Công ty phần mềm Nhất Tâm đã phá bỏ mọi khó khăn bế tắc trong công tác quản lý của doanh nghiệp, cơ quan nhà nước, đơn vị sự nghiệp (sở, ban, ngành) bằng cách công nghệ hóa giúp quý doanh nghiệp quản lý công việc một cách dễ dàng, tiện lợi đáp ứng nhu cầu đa dạng trong từng lĩnh vực kinh doanh của khách hàng.  Với đội ngũ kỹ sư CNTT trẻ, đầy sáng tạo và năng động, chịu khó và ham học hỏi. Cùng sự góp sức của các chuyên gia dày dặn kinh nghiệm về thiết kế và phát triển phần mềm ứng dụng, chúng tôi tự hào khi mang đến cho khách hàng những phần mềm ứng dụng cao cấp với thiết kế đơn giản thân thiện với người dùng." />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_below="@id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:text="Sứ mệnh của chúng tôi là có trách nghiệm hỗ trợ quý khách hàng tối ưu, đơn giản hóa khâu quản lý với phương châm “Sản phẩm chất lượng – dịch vụ tối ưu” công ty chúng tôi luôn mang đến cho quý khách hàng những sản phẩm tốt nhất, chất lượng dịch vụ cao nhất.
+Với mong muốn được phục vụ các khách hàng ngày càng chu đáo hơn, chúng tôi luôn sẵn sàng tiếp nhận và biết ơn mọi sự góp ý của khách hàng.
+Nơi chúng tôi miệt mài tìm ra những giải pháp.
+" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_below="@id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                />
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:text="Nơi chúng tôi trao đổi và giúp đỡ lẫn nhau không ngừng nghỉ" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_below="@id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:text="Nơi chúng tôi đoàn kết cố gắng hết mình" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_below="@id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView5"
+                android:text="Với đội ngũ chăm sóc khách hàng chuyên nghiệp" />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_below="@id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/text8"
+                android:layout_below="@id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontStyle="normal"
+                android:fontWeight="700"
+                android:textStyle="bold"
+                android:text="2. NHÓM SẢN PHẨM"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

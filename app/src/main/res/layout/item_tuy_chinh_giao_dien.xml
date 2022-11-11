@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <import type="vn.nhattamsoft.project_mau.R" />
+
+        <variable
+            name="itemTheme"
+            type="vn.nhattamsoft.project_mau.model.Theme" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:layout_marginLeft="@dimen/padd_10"
+        android:layout_marginRight="@dimen/padd_10"
+        android:layout_marginBottom="@dimen/padd_10"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="@dimen/padd_15">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padd_20"
+        android:layout_marginLeft="@dimen/padd_20"
+        android:layout_marginTop="@dimen/padd_20"
+        android:layout_marginBottom="@dimen/padd_15"
+        >
+        <TextView
+            android:id="@+id/tieude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{itemTheme.tieuDe}"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/noidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tieude"
+            android:layout_marginTop="@dimen/padd_10"
+            android:text="@{itemTheme.noiDung}"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noidung"
+            android:layout_marginTop="8dp"
+            >
+
+            <FrameLayout
+                android:id="@+id/primary"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/radius_15"
+                app:color_primary="@{itemTheme.colorPrimary}" />
+
+            <FrameLayout
+                android:id="@+id/accent"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/primary"
+                android:background="@drawable/radius_15"
+                app:color_primary="@{itemTheme.colorAccent}" />
+            <FrameLayout
+                android:id="@+id/light"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/radius_15"
+                android:layout_toEndOf="@+id/accent"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                app:color_primary="@{itemTheme.colorLight}"
+                />
+
+            <FrameLayout
+                android:id="@+id/text"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/light"
+                android:background="@drawable/radius_15"
+                app:color_primary="@{itemTheme.colorText}"
+                />
+
+            <FrameLayout
+                android:id="@+id/dark"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/text"
+                android:background="@drawable/radius_15"
+                app:color_primary="@{itemTheme.colorDark}" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnApDung"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:text="Áp dụng"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                app:color_button="@{itemTheme}"
+                app:cornerRadius="8dp"
+                app:strokeWidth="1dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</layout>

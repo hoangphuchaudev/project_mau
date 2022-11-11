@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="ThietLapVanTayViewModel"
+            type="vn.nhattamsoft.project_mau.viewmodels.ThietLapVanTayViewModel" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray2">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:padding="@dimen/padd_20"
+            android:layout_below="@+id/toolbar"
+            >
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/fingerprint2"
+                android:layout_marginEnd="@dimen/padd_20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/img1"
+                android:text="@string/DangNhapVT"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/btnswitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:checked="@={ThietLapVanTayViewModel.disable}"
+                android:onClick="@{() -> ThietLapVanTayViewModel.ThietLap(ThietLapVanTayViewModel.getDisable())}"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:paddingTop="@dimen/padd_10"
+            android:paddingBottom="@dimen/padd_10"
+            android:background="@color/white"
+            android:layout_below="@+id/rl1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dsthietbi"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/padd_20"
+                android:paddingRight="@dimen/padd_20"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvThietbi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="@{ThietLapVanTayViewModel.disable == true ? 1f : 0.3f}"
+                    />
+                <View
+                    android:id="@+id/viewDisableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/transparent_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="@{ThietLapVanTayViewModel.disable == true ? View.GONE : View.VISIBLE}"
+                    android:layout_marginLeft="@dimen/padd_20"
+                    android:layout_marginRight="@dimen/padd_20"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

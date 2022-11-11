@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SplashTheme" parent="Theme.SplashScreen">
+                <item name="windowSplashScreenBackground">@color/white</item>
+                <item name="windowSplashScreenAnimatedIcon">@drawable/splashlogo</item>
+<!--        <item name="android:windowBackground">@drawable/splashlogo</item>-->
+<!--        <item name="android:windowSplashScreenBrandingImage">@drawable/splashlogo</item>-->
+        <item name="postSplashScreenTheme">@style/Theme.project_mau</item>
+    </style>
+</resources>
